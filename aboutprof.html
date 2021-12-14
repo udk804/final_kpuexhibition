@@ -1,0 +1,270 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <title>Final</title>
+
+        <!-- jQuery 및 기타 라이브러리 로드 -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+        
+        <!-- CSS 파일 로드 -->
+        <link rel="stylesheet" href="css/style_4.css"/>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+
+    </head>
+
+    <body>
+        <div class= "container">
+            <!-- Header -->
+            <div class="navbar">
+                <div class= "logo"><a href="index.html"><h1>KPU-Exhibition</h1></a></div>
+               
+                <div class="all">
+                <div class="dropdown">
+                  <button class="dropbtn">WORKS
+                    <i class="fa fa-caret-down"></i>
+                  </button>
+                  <div class="dropdown-content">
+                    <a href="work_all.html">ALL</a>
+                    <a href="work_1.html">INDUSTRIAL</a>
+                    <a href="work_2.html">MEDIA</a>
+                  </div>
+                </div>
+
+                <div class="bar_one"><a href="student.html">DESIGNER</a></div>
+
+                <div class="dropdown">
+                    <button class="dropbtn">ABOUT
+                      <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                      <a href="aboutprof.html">Professor</a>
+                      <a href="aboutdept.html">Depertment</a>
+                    </div>
+                  </div>
+                
+                <div class="bar_one"><a href="qna.html">QNA</a></div>
+
+              </div>
+            </div>
+          
+            <div class="introduce">
+            <div class="prof">
+                 <div class="profile">
+                    <img src="https://i.postimg.cc/qvvpJW4K/Group-2324.png">
+                    <div class="pic_container">
+                      
+                </div>
+                </div>
+                <p class="media">미디어디자인공학전공</p>
+                <p>/</p>
+                <p class="industry">산업디자인공학전공</p>
+                <h1>Design Professor Introduction</h1>
+              
+            </div>
+        </div> 
+
+        <div class="profile_scroll">
+        <div class="carousel">
+            <div class="card-carousel">
+
+                <div class="my-card">
+                    <div class="prof1">
+                    <h1> Prof. Eunjung-Kang </h1>
+                    <p>Assistant professor</p>
+                    </div>
+                </div>
+
+                <div class="my-card">
+                    <div class="prof2">
+                    <h1> Prof. Hanjong-Kim</h1>
+                    <p>Assistant professor</p>
+                </div>
+                    </div>
+
+                    <div class="my-card">
+                        <div class="prof3">
+                        <h1> Prof. Moonhwan-Lee</h1>
+                        <p>Assistant professor</p>
+                    </div>
+                    </div>
+                   
+                    <div class="my-card">
+                        <div class="prof4">
+                        <h1> Prof. Ohjae-Kwon</h1>
+                        <p>Associate professor</p>
+                    </div>
+                    </div>
+                    
+                    <div class="my-card">
+                        <div class="prof5">
+                        <h1 > Prof. Eok-Kim</h1>
+                        <p>Dean of Faculty / Professor</p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+                <div class="lecture_mix">
+                <div class="lecture">
+                    <p>Lecture Introduce</p>
+                    <div class="lecture_img">
+                    
+                </div>
+                </div>
+                <div class="lecture_index">
+                    <h3>인터페이스 프로토타이핑</h3>
+                    <p>체험가능한 인터페이스 제작을 위하여, 어플리케이션 프로토타이핑 프로그램을 학습한다. Protopie를 활용하여 모바일 앱, 혹은 기타 소프트웨어의 인터페이스를 구체화할 수 있다.</p>
+                   
+                    <div class="icon_set">
+                    <div class="icon1">
+                  
+                </div>
+                <div class="icon2">
+                  
+                </div>
+                </div>
+
+                </div>
+           
+
+                </div>
+
+                <div id="footer">
+                    <h3>KPU Exhibition</h3>
+                    <h6>개인정보 처리방침</h6>
+                    <h4>CopyrightⓒKPUExhibition. All Rights Reserved.</h4>
+                    <h5>대학 홈페이지 바로가기 <a href="http://www.kpu.ac.kr/index.do?sso=ok" i class="fas fa-plus-circle"></i></h5></a>
+                </div>
+                
+                    <script>
+                         var $num = $('.card-carousel .my-card').length;
+    var $even = $num / 2;
+    var $odd = ($num + 1) / 2;
+
+    if ($num % 2 == 0) {
+        $('.card-carousel .my-card:nth-child(' + $even + ')').addClass('active');
+        $('.card-carousel .my-card:nth-child(' + $even + ')').prev().addClass('prev');
+        $('.card-carousel .my-card:nth-child(' + $even + ')').next().addClass('next');
+    } else {
+        $('.card-carousel .my-card:nth-child(' + $odd + ')').addClass('active');
+        $('.card-carousel .my-card:nth-child(' + $odd + ')').prev().addClass('prev');
+        $('.card-carousel .my-card:nth-child(' + $odd + ')').next().addClass('next');
+    }
+
+    $('.card-carousel .my-card').on('click', function() {
+
+
+        if ($('.card-carousel').is(':animated')) {
+            return;
+        }
+
+        var $slide = $('.card-carousel .active').height();
+
+        
+     
+        
+       if ($(this).hasClass('next')) {
+          $('.card-carousel').animate({top: '-=' + $slide});
+      } else if ($(this).hasClass('prev')) {
+           $('.card-carousel').animate({top: '+=' + $slide});
+      }
+        
+        $(this).removeClass('prev next');
+        $(this).siblings().removeClass('prev active next');
+        
+        $(this).addClass('active');
+        $(this).prev().addClass('prev');
+        $(this).next().addClass('next');
+    });
+
+
+    //<img class="pic" src="http://subweb.kpu.ac.kr/front/images/front/inderdesign/001/mhlee.jpg">
+
+
+    //let mycard = $('.my-card').find('.prof1').text();
+    //$('.prof1').text(mycard)
+
+    
+    $(document).ready(function () {
+    $('.prof1').click(function () {
+        
+    $('.pic_container').css('background-image','url("http://subweb.kpu.ac.kr/front/images/front/inderdesign/001/photo_11.jpg")')
+    $('.lecture_img').css('background-image','url("https://cdn.pixabay.com/photo/2018/01/28/10/59/internet-3113279_1280.jpg")')
+    $('.icon1').css('background-image','url("https://i.postimg.cc/pybFWLN2/grommet-icons-figma.png")')
+    $('.icon2').css('background-image','url("https://i.postimg.cc/rp60BkCL/simple-icons-adobexd.png")')
+    $('.lecture_index h3').text('모바일디자인')
+    $('.lecture_index p').text('모바일 앱 디자인과정을 이해하고 모바일 앱 디자인을 계획 및 제작하는 능력을 배양한다. 모바일 앱 기획부터 와이어프레임 제작, 플로우 차트, 레이아웃과 UI 설계까지 구체적인 모바일 디자인 표현능력을 향상시킨다.')
+        });
+        
+            });
+
+            $(document).ready(function () {
+    $('.prof2').click(function () {
+        
+    $('.pic_container').css('background-image','url("http://subweb.kpu.ac.kr/dataview/cmscommon/20210507_1438_0610015.jpg")')
+  
+    $('.lecture_img').css('background-image','url("https://cdn.pixabay.com/photo/2017/08/10/08/47/laptop-2620118_1280.jpg")')
+    $('.icon1').css('background-image','url("https://i.postimg.cc/xdxC0VLC/logos-visual-studio-code.png')
+    $('.icon2').css('background-image','none')
+    $('.lecture_index h3').text('웹어플리케이션구현기초')
+    $('.lecture_index p').text('웹어플리케이션을 실제로 구현할 수 있는 방법에 대해 학습한다. 프론트엔드 개발을 접목하여 실제 경험 가능한 웹어플리케이션 시작품을 개발하고 테스트하는 것을 목표로 한다.')
+
+});
+      
+            });
+            
+            $(document).ready(function () {
+    $('.prof3').click(function () {
+        
+    $('.pic_container').css('background-image','url("http://subweb.kpu.ac.kr/front/images/front/inderdesign/001/mhlee.jpg")')
+    $('.lecture_img').css('background-image','url("https://cdn.pixabay.com/photo/2016/11/19/14/00/code-1839406_1280.jpg")')
+   
+    $('.icon1').css('background-image','url("https://i.postimg.cc/pybFWLN2/grommet-icons-figma.png")')
+    $('.icon2').css('background-image','url("https://i.postimg.cc/xdxC0VLC/logos-visual-studio-code.png")')
+    $('.lecture_index h3').text('인터페이스프로토타이핑')
+    $('.lecture_index p').text('체험가능한 인터페이스 제작을 위하여, 어플리케이션 프로토타이핑 프로그램을 학습. Protopie를 활용하여 모바일 앱, 혹은 기타 소프트웨어의 인터페이스를 구체화할 수 있음.')
+});
+       
+            });
+
+    $(document).ready(function () {
+    $('.prof4').click(function () {
+        
+    $('.pic_container').css('background-image','url("http://subweb.kpu.ac.kr/dataview/cmscommon/20210507_1438_0610003.jpg")')
+  
+    $('.lecture_img').css('background-image','url("https://cdn.pixabay.com/photo/2015/07/17/22/43/student-849822_1280.jpg")')
+    $('.icon1').css('background-image','url("https://i.postimg.cc/Gt7fgzDH/Vector-2.png")')
+    $('.icon2').css('background-image','none')
+    $('.lecture_index h3').text('선행인터랙션디자인')
+    $('.lecture_index p').text('IT 시대의 핵심 기술인 다양한 센서의 세계를 이해. 센서의 특성을 응용하여 재미있고 차별화된 아이디어를 도출. 제안한 아이디어를 효과적으로 가시화하는 방법을 학습')
+});
+       
+            });
+
+    $(document).ready(function () {
+    $('.prof5').click(function () {
+        
+    $('.pic_container').css('background-image','url(" http://subweb.kpu.ac.kr/front/images/front/inderdesign/001/photo_05.jpg")')
+ 
+    $('.lecture_img').css('background-image','url("https://cdn.pixabay.com/photo/2015/01/08/18/27/startup-593341_1280.jpg")')
+    $('.icon1').css('background-image','url("https://i.postimg.cc/Wz3WZryj/raphael-ppt.png")')
+    $('.icon2').css('background-image','none')
+    $('.lecture_index h3').text('서비스디자인실무')
+    $('.lecture_index p').text('시장의 니즈(needs)와 기호(preferences), 트렌드(trend)에 대해 이해하고 가치있는 리서치 자료를 수집하는 서비스디자이너의 능력을 제고한다.')
+});
+     
+            });
+      
+
+           
+
+              
+   
+    </script>
+
+    </body>
+</html>    

@@ -1,0 +1,577 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+}
+
+body {
+   background-color:white;
+   overflow-x: hidden;
+   width: 100vw;
+    height: 100vh;
+}
+
+.container {
+    
+    
+    position: relative; 
+   
+}
+
+
+/* header */
+.logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 115px;
+    
+}
+
+.logo a {
+    text-decoration: none;
+}
+
+.logo h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    color: #fff;
+    
+}
+
+.all {
+    margin-right: 5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.bar_one {
+    margin-right: 115px;
+    color: #fff;
+}
+
+.bar_one a {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #306AFF;
+    font-family: 'Noto Sans KR', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+  }
+  
+  /* Links inside the navbar */
+  .all .navbar a {
+    margin-right: 10vw;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    /* padding: 14px 16px; */
+    text-decoration: none;
+    font-family: 'Noto Sans KR', sans-serif;
+  }
+  
+  /* The dropdown container */
+  .dropdown {
+    /* float: left; */
+    overflow: hidden;
+    margin-right: 115px;
+  }
+  
+  /* Dropdown button */
+  .all .dropdown .dropbtn {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 0px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+  }
+  
+  /* Add a red background color to navbar links on hover */
+  /* .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+  } */
+  
+  /* Dropdown content (hidden by default) */
+  .all .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #306AFF;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 5px;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  /* Add a grey background color to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #89B1FF;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  /* header end */
+
+
+.background-box {
+    width: 1612px;
+    height: 1612px;
+    border-radius : 1600px;
+    position: absolute;
+    left: -1000px;
+    z-index:-1;
+    top: -80px;
+    border: solid 15px #B2CCFF;
+
+
+}
+
+
+
+
+
+  
+
+
+  .box{
+    overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+      width:20vw;
+      height:13vw;
+      background-color:black;
+    border-radius: 0.5vw;
+    overflow: hidden;
+  }
+
+  .box img{height:100%;
+    width:100%;}
+
+.person_box {
+    overflow: hidden;
+    width: 18.9vw;
+    height:23.5vw;
+    background-color:black;
+    position: absolute;
+    left:12vw;
+    top:5.3vw;
+    border-radius:1vw;
+    
+}
+
+.person_box img{
+  width: 100%;
+}
+
+.person_name {
+    font-size:1.5vw;
+    position: absolute;
+    font-weight: 700;
+    left:37.9vw;
+    top:6.5vw;
+    color:#383838;
+
+}
+
+.person_engname {
+    font-size:1.5vw;
+    position: absolute;
+
+    left:37.9vw;
+    top:8.5vw;
+    font-weight: 700;
+    color:#306AFF;
+}
+
+.major {
+    font-size:1.2vw;
+    position: absolute;
+    left:37.9vw;
+    top:11.5vw;
+    font-weight: 400;
+}
+
+.contact {
+    width: 2vw;
+   height: 2vw;
+    overflow: hidden;
+    position: absolute;
+    left:37.9vw;
+    top:15.9vw;
+    font-weight: 700;
+    color:#306AFF;
+}
+.contact img{
+  width: 100%;
+}
+
+.person_email {
+    font-size:0.9vw;
+    position: absolute;
+    left:40.5vw;
+    top:15.9vw;
+    font-weight: 400;
+}
+
+.question {
+    font-size: 1vw;
+		padding-top:0.9vw;
+		padding-bottom: 0.9vw;
+		padding-left: 1.2vw;
+		padding-right: 1.2vw;
+		background-color : #306AFF;
+		color : #fff;
+		border-radius: 4vw;
+		text-decoration :none;
+        position: absolute;
+        font-weight: 400;
+        top:6.3vw;
+        left:66.5vw;
+        transition-duration: 0.3s;
+}
+
+.question:hover{
+  background-color : #002c9c;
+}
+
+.subject_a {
+    font-size: 1vw;
+		padding-top:0.5vw;
+		padding-bottom: 0.5vw;
+		padding-left: 1vw;
+		padding-right: 1vw;
+		background-color : #E5E5E5;
+		color : #2b2b2b;
+		border-radius: 0.5vw;
+		text-decoration :none;
+        position: absolute;
+        font-weight: 500;
+        top:20.9vw;
+        left:48.5vw;
+  transition-duration:0.3s
+}
+
+.subject_a:hover{background-color:#777777;}
+
+.professor_a {
+    font-size:  1vw;
+		padding-top:0.5vw;
+		padding-bottom:0.5vw;
+		padding-left: 1vw;
+		padding-right: 1vw;
+		background-color : #E5E5E5;
+		color : #2b2b2b;
+		border-radius: 0.5vw;
+		text-decoration :none;
+        position: absolute;
+        font-weight: 500;
+        top:24.1vw;
+        left:43.8vw;
+        transition-duration:0.3s
+}
+.professor_a:hover{background-color:#777777;}
+
+
+
+.title {
+    position: absolute;
+    left:12vw;
+    top:34vw;
+    font-weight: 700;
+    color:#306AFF;
+    font-size:36px;
+}
+
+.smallcircle {
+    width:158px;
+    height:158px;
+    border-radius: 158px;
+    background-color: #C2D7FF;
+    left: 1650px;
+    top:100px;
+    position: absolute;
+}
+
+.midcircle{
+    width:434px;
+    height:434px;
+    border-radius: 434px;
+    background-color: #6B95FF;
+    left: 1596px;
+    top:862px;
+    position: absolute;
+}
+
+.subject {
+    font-size:1vw;
+    position: absolute;
+    left:38vw;
+    top:21.3vw;
+    font-weight: 400;
+    
+}
+
+.professor {
+    font-size:1vw;
+    position: absolute;
+    left:38vw;
+    top:24.55vw;
+    font-weight: 400;
+
+}
+
+
+.name {
+    margin-left: 1vw;
+    margin-top : 0.8vw;
+    font-size: 1vw;
+    color:#2b2b2b
+}
+
+.email {
+    margin-left: 1vw;
+    margin-top : 0.2vw;
+    font-size: 0.85vw;
+    color: #5e5e5e;
+    font-weight: 300;
+}
+
+.ques{
+  position: absolute;
+  width: 35vw;
+  height:50vw;
+  background-color: #fff;
+  z-index:4;
+  left:50%;
+  transform: translateX(-50%);
+  top:14vw;
+  border-radius:1vw;
+  display: none;
+}
+
+.ques .enter{
+  width:10vw;
+  height: 3vw;
+  background-color:#c0c0c0 ;
+  margin-left: auto;
+  margin-right: auto;
+ margin-top:2.3vw;
+ border-radius:0.3vw;
+ cursor: pointer;
+ transition-duration: 0.3s;
+}
+
+.ques .enter:hover  p{
+   color:#ffffff;
+}
+.ques .enter:hover{
+  background-color:#585858;
+}
+
+.ques .enter p{
+  font-size:1vw;
+  padding-left: 0.7vw;
+  padding-top: 0.7vw;
+  transition-duration: 0.3s;
+}
+
+.ques h2{
+  margin-left:3vw;
+  margin-top: 2vw;
+  font-weight: 700;
+}
+.ques h4{
+  margin-left:3vw;
+  margin-top:2.5vw;
+  margin-bottom:0.4vw
+}
+
+.ques p{
+  margin-left:3vw;
+  font-size: 0.7vw;
+  margin-bottom:0.4vw;
+  margin-top:-0.2vw;
+  color:#474747
+}
+
+.ques input{
+  margin-left:3vw;
+  padding: 0.8vw;
+  background-color:#c0c0c0;
+  border:none;
+border-radius:0.3vw}
+
+.ques textarea{
+  margin-left:3vw;
+  padding: 0.5vw;
+  background-color:#c0c0c0;
+  border:none;
+border-radius:0.3vw;
+}
+
+
+.back_box{
+  position: absolute;
+  width: 100%;
+  height:91.5vw;
+  background-color:black;
+  z-index:3;
+  opacity:0.4;
+  display: none;
+}
+
+.cancle{
+  width: 1.5vw;
+  height: 1.5vw;
+  margin-left: 30.2vw;
+  margin-top: 2vw;
+  cursor: pointer;
+}
+
+.cancle img{width: 100%; }
+
+#footer {
+  position:absolute;
+  /* margin-top:100vh; */
+  width:100%;
+  height:5vw;   
+  background:#F8F9FA;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  margin-top: 86vw;
+
+}
+
+#footer h3 {
+  font-size: 0.8vw;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 500;
+  margin-left: 9vw;
+}
+
+#footer h6 {
+  font-size: 0.6vw;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 400;
+  color: #878890;
+  margin-left: 2vw;
+  width:8vw
+
+}
+
+#footer h4 {
+  font-size: 0.8vw;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 500;
+  margin-left: 20vw;
+
+}
+
+#footer h5 {
+  font-size: 0.8vw;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 400;
+  margin-left: 23vw;
+  
+}
+
+#footer a {
+  text-decoration: none;
+ width:1vw;
+ height:1vw;
+}
+
+ .carousel {
+        width: 100%;
+        margin-top: 33vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        overflow-x: hidden;
+        position: absolute;
+       
+    }
+
+.carousel .card-carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-top:5vw;
+  margin-right: 9.5vw;
+}
+
+.carousel .card-carousel .my-card {
+  height: 20vw;
+  width: 24vw;
+  position: relative;
+  z-index: 1;
+  -webkit-transform: scale(0.6) translateY(-2rem);
+  transform: scale(0.6) translateY(-2rem);
+  opacity: 0;
+  cursor: pointer;
+  pointer-events: none;
+  
+  transition: 1s;
+  margin-left: 0.5vw;
+  margin-right: 0.5vw;
+  border-radius: 1vw;
+  overflow: hidden;
+
+}
+.carousel .card-carousel .my-card.active {
+  z-index: 3;
+  -webkit-transform: scale(1) translateY(0) translateX(0);
+  transform: scale(1) translateY(0) translateX(0);
+  opacity: 1;
+  pointer-events: auto;
+  transition: 1s;
+  
+  
+}
+.carousel .card-carousel .my-card.prev, .carousel .card-carousel .my-card.next {
+  z-index: 2;
+  opacity: 0.6;
+  pointer-events: auto;
+  transition: 1s;
+}
+.carousel .card-carousel .my-card.prev {
+  -webkit-transform: scale(0.8) translateY(-1rem) translateX(26rem);
+  transform: scale(0.8) translateY(-1rem) translateX(0.8em) ;
+}
+.carousel .card-carousel .my-card.next {
+  -webkit-transform: scale(0.8) translateY(-1rem) translateX(-26rem);
+  transform: scale(0.8) translateY(-1rem) translateX(-0.8rem);}

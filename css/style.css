@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #306aff;
+    color: #fff;
+    overflow: hidden;
+}
+
+.container {
+    
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+/* .myheader {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+   
+    background-color: #306aff;
+} */
+
+
+
+/* .navi {
+   font-size: 16px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right:  11.2vw;
+    text-align: center;
+    
+}
+
+.navi a {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    padding-left: 50px;
+    padding-right: 50px;
+    position: relative;
+    font-weight: 700;
+}
+
+  .navi li a::after{
+    content:'';
+    width:0%;
+    height: 3px;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translatex(-50%);
+    background: white;
+    transition: width 0.2s;
+    margin-bottom:-3%   
+}
+
+
+.navi li a:hover::after{
+    width:60%; 
+} 
+
+.navi .work_bar:hover > li > ul{
+    display:block;
+   
+}
+
+.work_sub li:hover{
+    background-color:#306aff;
+    font-weight: bold;
+}
+
+
+.work_sub{list-style: none;
+  
+margin-left: 5px;
+margin-bottom: -192px;
+margin-top: 54px;
+display:none;
+}
+
+.work_sub li{
+    margin-bottom:14px;
+    background-color:#89B1FF;
+    border-radius:8px;
+    color:#fff;
+    padding: 8px;
+    font-size: 12px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.work_sub .sub1{width:70px}
+.work_sub .sub2{width:50px}
+.work_sub .sub3{width:30px} */
+
+/* Navbar container */
+
+.logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 115px;
+    
+}
+
+.logo a {
+    text-decoration: none;
+}
+
+.logo h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    color: #fff;
+    
+}
+
+.all {
+    margin-right: 5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.bar_one {
+    margin-right: 115px;
+    
+}
+
+.bar_one a {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #306AFF;
+    font-family: 'Noto Sans KR', sans-serif;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+  }
+  
+  /* Links inside the navbar */
+  .all .navbar a {
+    margin-right: 10vw;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    /* padding: 14px 16px; */
+    text-decoration: none;
+    font-family: 'Noto Sans KR', sans-serif;
+  }
+  
+  /* The dropdown container */
+  .dropdown {
+    /* float: left; */
+    overflow: hidden;
+    margin-right: 115px;
+  }
+  
+  /* Dropdown button */
+  .all .dropdown .dropbtn {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 0px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+  }
+  
+  /* Add a red background color to navbar links on hover */
+  /* .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+  } */
+  
+  /* Dropdown content (hidden by default) */
+  .all .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 5px;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: #306AFF;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  /* Add a grey background color to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #89B1FF;
+    color: #fff;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+.title {
+    position: relative;
+}
+
+marquee {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 900;
+    font-size: 130px;
+    top: 60px;
+    position: absolute;
+}
+
+.main_img {
+    position: relative;
+    
+}
+
+/* .main_img img {
+    position: absolute;
+    top: 340px;
+    margin-left: 80px;
+    
+    animation: fadein 2s;
+} */
+
+#main_img {
+        background-image: url("../img/1.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+        top: 400px;
+        margin-left: 80px;
+        width: 1160px;
+        height: 600px;
+        background-color: #333;  
+        animation: fadein 2s;
+        border-radius: 5px; 
+}
+
+
+.main_text {
+    position: relative;
+    display: flex;
+}
+
+.main_text h3 {
+    font-size: 40px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 700;
+    position: absolute;
+    right: 80px;
+    text-align: right;
+    top: 320px;
+
+    animation: fadein 2s;
+}
+
+.sub_text {
+    position: relative;
+    display: flex;
+
+    animation: fadein 2s;
+}
+
+.sub_text h3 {
+    font-size: 36px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+    position: absolute;
+    right: 80px;
+    text-align: right;
+    top: 460px;
+}
+
+@keyframes fadein {
+    from {
+        opacity:0;
+        
+    }
+    to {
+        opacity:1;
+    }
+}
+
+@keyframes slide {
+    from {
+        margin-bottom: 0;
+    }
+    to {
+        margin-bottom: 100px;
+    }
+}
+
+

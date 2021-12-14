@@ -1,0 +1,236 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <title>Final</title>
+
+        <!-- jQuery 및 기타 라이브러리 로드 -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+        
+        <!-- CSS 파일 로드 -->
+        <link rel="stylesheet" href="css/style_6.css"/>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    </head>
+
+    <body>
+        
+        
+        <div class= "container">
+            <!-- Header -->
+            <div class="navbar">
+                <div class= "logo"><a href="index.html"><h1>KPU-Exhibition</h1></a></div>
+               
+                <div class="all">
+                <div class="dropdown">
+                  <button class="dropbtn">WORKS
+                    <i class="fa fa-caret-down"></i>
+                  </button>
+                  <div class="dropdown-content">
+                    <a href="work_all.html">ALL</a>
+                    <a href="work_1.html">INDUSTRIAL</a>
+                    <a href="work_2.html">MEDIA</a>
+                  </div>
+                </div>
+
+                <div class="bar_one"><a href="student.html">DESIGNER</a></div>
+
+                <div class="dropdown">
+                    <button class="dropbtn">ABOUT
+                      <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                      <a href="aboutprof.html">Professor</a>
+                      <a href="aboutdept.html">Depertment</a>
+                    </div>
+                  </div>
+                
+                <div class="bar_one"><a href="qna.html">QNA</a></div>
+
+              </div>
+            </div>
+            <!-- header end -->
+            
+            <div class= "container">
+            
+            <div class="background-box"></div>
+            <div class="smallcircle"></div>
+     
+            <div class="midcircle"></div>
+
+            <div class= "person_box">
+                <img src="이채연.png" alt="">
+            </div>
+            
+            <div class="person_name">이 채연</div>
+            <div class="person_engname">ChaeYeon-Lee</div>
+            <div class="major">미디어디자인공학 전공</div>
+            <div class="subject">가장 도움이된 수업은:</div>
+            <div class="professor">지도교수님:</div>
+
+            <div class="contact"> <img src="ci_mail.png"></div>
+            <div class="person_email"> chaeyeon@naver.com </div>
+            <a href="#" class="question">선배에게 질문하기 > </a>
+            <a href="#" class="subject_a">인터페이스 프로토타이핑 </a>
+            <a href="#" class="professor_a"> 이문환 </a>
+
+            <div class="title">PROJECTS</div>
+            
+            
+        
+            <div class="carousel">
+              <div class="card-carousel">
+  
+                  <div class="my-card">
+                 
+                      <div class="box-wrapper">
+                        <div class= "box">
+                            <img src="image 45.png" alt="">
+                        </div>
+                        <p class="name">SMART STORE RENEWAL</p>
+                        <p class="email">이채연,조민기,류수아</p>
+                    </div>
+                  </div>
+  
+                  <div class="my-card">
+                    <div class="box-wrapper">
+
+                      <div class= "box">
+                          <img src="image 19.jpg" alt="">
+                      </div>
+                      <p class="name">METABUS BLOG SERVICE</p>
+                      <p class="email">이채연</p></div>
+                      </div>
+  
+                      <div class="my-card">
+                        <div class="box-wrapper">
+                          <div class= "box">
+                              <img src="project_3.png" alt="">
+                          </div>
+                          <p class="name">C4D NIKE SHOES</p>
+                          <p class="email">이채연,류수아</p>
+          
+                      </div>
+                      </div>
+                      
+                     
+                     
+                      </div>
+                  </div>
+                  </div>
+      
+                  <div class="ques">
+
+                    <div class="cancle">
+                      <img src="https://i.postimg.cc/tCwt1xg6/premium-icon-cancel-754592.png">
+                    </div>
+
+                    <h2>
+                      선배에게 질문하기
+                    </h2>
+
+                    <h4>
+                      메일 인증하기
+                    </h4>
+                    <input type="text" id="email" size="58" required>
+
+                    <h4>
+                      제목
+                    </h4>
+                    <p class="detail">*필수 입력사항입니다.</p>
+                    <input type="text" id="title" size="58" required>
+                  <h4>
+                    내용 
+                  </h4>
+                  <p class="detail">*필수 입력사항입니다.</p>
+                  <textarea id="story" rows="12" cols="62">
+                  </textarea>
+
+                  <div class="enter">
+                    <p>보내기</p>
+                  </div>
+            
+                  </div>
+
+                  <div class="back_box">
+
+                  </div>
+        
+            
+        
+        </div>
+        </div>
+        
+        <div id="footer">
+          <h3>KPU Exhibition</h3>
+          <h6>개인정보 처리방침</h6>
+          <h4>CopyrightⓒKPUExhibition. All Rights Reserved.</h4>
+          <h5>대학 홈페이지 바로가기 <a href="http://www.kpu.ac.kr/index.do?sso=ok" i class="fas fa-plus-circle"></i></h5></a>
+      </div>
+  <script>
+     
+     var $num = $('.card-carousel .my-card').length;
+    var $even = $num / 2;
+    var $odd = ($num + 1) / 2;
+
+    if ($num % 2 == 0) {
+        $('.card-carousel .my-card:nth-child(' + $even + ')').addClass('active');
+        $('.card-carousel .my-card:nth-child(' + $even + ')').prev().addClass('prev');
+        $('.card-carousel .my-card:nth-child(' + $even + ')').next().addClass('next');
+    } else {
+        $('.card-carousel .my-card:nth-child(' + $odd + ')').addClass('active');
+        $('.card-carousel .my-card:nth-child(' + $odd + ')').prev().addClass('prev');
+        $('.card-carousel .my-card:nth-child(' + $odd + ')').next().addClass('next');
+    }
+
+    $('.card-carousel .my-card').on('click', function() {
+        if ($('.card-carousel').is(':animated')) {
+            return;
+        }
+
+        var $slide = $('.card-carousel .active').width();
+        
+        if ($(this).hasClass('next')) {
+            $('.card-carousel').animate({left: '-=' + $slide});
+        } else if ($(this).hasClass('prev')) {
+            $('.card-carousel').animate({left: '+=' + $slide});
+        }
+        
+        $(this).removeClass('prev next');
+        $(this).siblings().removeClass('prev active next');
+        
+        $(this).addClass('active');
+        $(this).prev().addClass('prev');
+        $(this).next().addClass('next');
+    });
+
+    $(".question").click(function(){
+
+    
+    $(".back_box").css('display','block');
+$(".ques").css('display','block');
+
+        });
+
+        $(".cancle").click(function(){
+
+$(".back_box").css('display','none');
+$(".ques").css('display','none');
+    });
+
+    $(".enter").click(function(){
+
+$(".back_box").css('display','none');
+$(".ques").css('display','none');
+alert("질문을 보냈습니다!");
+    });
+    
+
+  </script>
+            
+        
+
+    </body>
+</html>    
